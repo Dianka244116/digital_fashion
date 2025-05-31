@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById('information__form');
   const popup = document.getElementById('success-popup');
 
+  
+if (!form) {
+    return;
+  }
+
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
